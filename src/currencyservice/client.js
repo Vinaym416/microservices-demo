@@ -32,7 +32,7 @@ const logger = pino({
   name: 'currencyservice-client',
   messageKey: 'message',
   formatters: {
-    level (logLevelString, logLevelNum) {
+    level (logLevelString) {
       return { severity: logLevelString }
     }
   }
